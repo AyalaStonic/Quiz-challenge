@@ -1,0 +1,45 @@
+#frame1 {
+    background-color: rgb(202, 220, 226);
+    border: 10px solid black;
+    width: 700px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttons1 {
+    background-color: rgb(76, 1, 145);
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.buttons002 {
+    background-color: lightblue;
+    color: black;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 50px;
+}
+
+#text1 {
+    text-align: center;
+}
+
+#text2 {
+    text-align: left;
+}
+
+#green1 {
+    color: green;
+}
+
+#red1 {
+    color: red;
+}
