@@ -5,18 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiple choices</title>
+    <!--  Css link  -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div id="frame1">
-        <div id="text1">
+    <nav id="frame1">
+        <header id="text1">
             <h2>Coding Quiz Challenge</h2>
             Question: <text id="number1">0</text><br />
             Score: <text id="score1">0</text>
         <hr />
                 <div id="message1">Click Start Quiz to Start</div><br />
-            </div>
-        <div id="text2">
+        </header>
+        <!--    multiple choices section   -->
+
+        <section id="text2">
             <div id="question1"></div>
             <div id="option1"></div>
             <div id="option2"></div>
@@ -27,8 +30,8 @@
                 <div id="disappear1"><button class="buttons1" onclick="start1()">Start Quiz</button></div>
             </div>
             <div id="next1"></div>
-        </div>
-        </div>
+        </section>
+    </nav>
         <script src="script.js"></script>
 </body>
 </html>
