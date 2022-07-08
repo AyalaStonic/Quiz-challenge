@@ -378,6 +378,8 @@ var a4 = ["<button class=buttons002 onclick=q1i()>8</button>",
 "<button class=buttons002 onclick=q10c()>18</button>"];
 
 
+var confirmRepeat = window.confirm;
+
 
 function timer001() {
     t = t - 1;
@@ -386,16 +388,19 @@ function timer001() {
     }
 
     if (t < 1) {
-        window.clearInterval(update);
-        message001.innerHTML = "Time's up";
-        message002.innerHTML = "";
-        message003.innerHTML = "";
-        message004.innerHTML = "<button class=buttons002 onclick=repeat001()>Repeat</button>";
-    }
-}
+        confirmRepeat(
+            "End Of Quiz"
+        
+        );
+        }
+
+        }
+
+
 
 update = setInterval("timer001()", 1000);
 
 function repeat001() {
     location.reload();
 }
+
