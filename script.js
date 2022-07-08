@@ -18,6 +18,7 @@ function start1() {
     option3.innerHTML = a3[0];
     option4.innerHTML = a4[0];
     number1.innerHTML = n++;
+    t = 50;
     }
 
     function q1c() {
@@ -121,7 +122,7 @@ function start1() {
         }
         
         function q4i() {
-        answer1.innerHTML = "<div id=red1>" + i + "</div>";
+        answer1.innerHTML = "<div id=re1>" + i + "</div>";
         option1.innerHTML = "";
         option2.innerHTML = "";
         option3.innerHTML = "";
@@ -375,3 +376,26 @@ var a4 = ["<button class=buttons002 onclick=q1i()>8</button>",
 "<button class=buttons002 onclick=q8i()>9</button>",
 "<button class=buttons002 onclick=q9c()>16</button>",
 "<button class=buttons002 onclick=q10c()>18</button>"];
+
+
+
+function timer001() {
+    t = t - 1;
+    if (t < 50) {
+        time001.innerHTML = t;
+    }
+
+    if (t < 1) {
+        window.clearInterval(update);
+        message001.innerHTML = "Time's up";
+        message002.innerHTML = "";
+        message003.innerHTML = "";
+        message004.innerHTML = "<button class=buttons002 onclick=repeat001()>Repeat</button>";
+    }
+}
+
+update = setInterval("timer001()", 1000);
+
+function repeat001() {
+    location.reload();
+}
